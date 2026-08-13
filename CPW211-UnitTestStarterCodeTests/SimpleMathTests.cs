@@ -43,6 +43,22 @@ public class SimpleMathTests
     }
 
     // TODO: Add a new test to test the Divide method with two valid numbers
+    [TestMethod]
+    public void Divide_TwoValidNumbers_ReturnsQuotient() 
+    {
+        double expected = 5;
+        double actual = SimpleMath.Divide(10, 2);
+
+        Assert.AreEqual(expected, actual);
+    }
 
     // TODO: Add a new test to test the subtract method with two valid numbers
+    [TestMethod]
+    public void Subtract_TwoValidNumbers_ReturnsDifference()
+    {
+        double expected = 5;
+        double actual = SimpleMath.Subtract(10, 5);
+
+        Assert.AreEqual(expected, actual);
+    }
 }

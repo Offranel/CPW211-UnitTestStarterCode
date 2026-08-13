@@ -19,7 +19,9 @@ public class SimpleMathTests
     public void Add_TwoNumbers_ReturnsSum(double num1, double num2)
     {
         // Use the DataRow values to test the Add method
-        Assert.Fail();
+        double expected = num1 + num2;
+        double actual = SimpleMath.Add(num1, num2);
+        Assert.AreEqual(expected, actual);
     }
 
     [TestMethod]

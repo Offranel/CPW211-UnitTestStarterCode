@@ -28,7 +28,9 @@ public class SimpleMathTests
     public void Multiply_TwoNumbers_ReturnsProduct()
     {
         // Use a few pairs of values to test the Multiply method
-        Assert.Fail();
+        Assert.AreEqual(50, SimpleMath.Multiply(5, 10));
+        Assert.AreEqual(0, SimpleMath.Multiply(0, 100));
+        Assert.AreEqual(10, SimpleMath.Multiply(-1, -10));
     }
 
     [TestMethod]
@@ -36,7 +38,8 @@ public class SimpleMathTests
     {
         // Divide by zero should throw an argument exception with a message
         // "Denominator cannot be zero"
-        Assert.Fail();
+        ArgumentException exception = Assert.ThrowsException<ArgumentException>(() => SimpleMath.Divide(10, 0));
+        Assert.AreEqual("Denominator cannot be zero", exception.Message);
     }
 
     // TODO: Add a new test to test the Divide method with two valid numbers

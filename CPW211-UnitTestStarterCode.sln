@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.1.32127.271
+# Visual Studio Version 18
+VisualStudioVersion = 18.9.12105.275 stable
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPW211-UnitTestStarterCode", "CPW211-UnitTestStarterCode\CPW211-UnitTestStarterCode.csproj", "{73782BC6-CF72-4386-BA85-57E7A6C16031}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPW211-UnitTestStarterCodeTests", "CPW211-UnitTestStarterCodeTests\CPW211-UnitTestStarterCodeTests.csproj", "{248CF284-329A-4502-82CB-FD6B65F8DB0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankAccount", "BankAccount\BankAccount.csproj", "{F7FBF841-2C54-4FB5-9D11-8B7193BEE8EB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{248CF284-329A-4502-82CB-FD6B65F8DB0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{248CF284-329A-4502-82CB-FD6B65F8DB0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{248CF284-329A-4502-82CB-FD6B65F8DB0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7FBF841-2C54-4FB5-9D11-8B7193BEE8EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7FBF841-2C54-4FB5-9D11-8B7193BEE8EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7FBF841-2C54-4FB5-9D11-8B7193BEE8EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7FBF841-2C54-4FB5-9D11-8B7193BEE8EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

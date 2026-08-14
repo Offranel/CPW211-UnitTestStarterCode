@@ -79,5 +79,53 @@ public class BankAccountTests
         // Assert
         Assert.AreEqual(expectedBalance, account.Balance);
     } 
+    [TestMethod]
+    public void Withdraw_zeroAmount_BalanceDoesNotChange()
+    {
+        // Arrange
+        BankAccountClass account = new(100);
+        double withdrawAmount = 0;
+        double expectedBalance = 100;
+        // Act
+        account.Withdraw(withdrawAmount);
+        // Assert
+        Assert.AreEqual(expectedBalance, account.Balance);
+    } 
+    [TestMethod]
+    public void Withdraw_MoreThanBalance_BalanceCanGoNegative()
+    {
+        // Arrange
+        BankAccountClass account = new(100);
+        double withdrawAmount = 150;
+        double expectedBalance = -50;
+        // Act
+        account.Withdraw(withdrawAmount);
+        // Assert
+        Assert.AreEqual(expectedBalance, account.Balance);
+    }
+    [TestMethod]
+    public void Deposit_NegativeAmount_BalanceDecreases()
+    {
+        // Arrange
+        BankAccountClass account = new(100);
+        double depositAmount = -50;
+        double expectedBalance = 50;
+        // Act
+        account.Deposit(depositAmount);
+        // Assert
+        Assert.AreEqual(expectedBalance, account.Balance);
+    }
+    [TestMethod]
+    public void Withdraw_NegativeAmount_BalanceIncreases()
+    {
+        // Arrange
+        BankAccountClass account = new(100);
+        double withdrawAmount = -50;
+        double expectedBalance = 150;
+        // Act
+        account.Withdraw(withdrawAmount);
+        // Assert
+        Assert.AreEqual(expectedBalance, account.Balance);
+    }
 
 }
